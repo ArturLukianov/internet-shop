@@ -1,3 +1,4 @@
+# noinspection PyInterpreter
 """
 URL configuration for internetshop project.
 
