@@ -18,15 +18,18 @@
 
     .product {
         display: flex;
-        border: 2px #04aa6d solid;
-        margin-top: 10px;
+        margin-top: 20px;
         border-radius: 10px;
         padding: 10px;
+        background-color: white;
+        width: 60%;
     }
 
     .heading {
         display: flex;
         align-items: center;
+        padding-bottom: 10px;
+        justify-content: center;
     }
 
     a {
@@ -53,6 +56,28 @@
     .navigation {
         margin-left: 100px;
     }
+
+    .productList {
+        background-color: #f6f6f6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        height: 50px;
+        width: 100%;
+        background-color: white;
+        border: 2px solid #d6d6d6;
+        color: #060606;
+        padding: 0;
+        border-radius: 10px;
+    }
+
+    .priceSection {
+        width: 500px;
+    }
+
 </style>
 
 <div class="heading">
@@ -67,6 +92,9 @@
     </div>
 </div>
 
+
+<div class="productList">
+
 <div class="product">
     <img src="https://eco-speed.ru/d/ninebot_one_s2-glavnay.jpg">
     <div>
@@ -75,8 +103,12 @@
 
     Это компактное и лёгкое устройство позволяет вам быстро и легко передвигаться по городу, не завися от пробок и общественного транспорта. Моноколесо идеально подходит для тех, кто ценит свободу и мобильность.</p>
     </div>
-    <button>Купить</button>
+    <div class="priceSection">
+        <h3>19 990 ₽</h3>
+        <button>Купить</button>
+    </div>
 </div>
+
 
 <div class="product">
     <img src="https://i-market.shop/upload/iblock/865/14gwzmlv576w1yc4m7jto928d6ldn1z2.jpg">
@@ -87,4 +119,5 @@
 Они помогут вам следить за здоровьем, быть в курсе всех событий и оставаться на связи с окружающим миром. Смарт-часы оснащены множеством функций: от отслеживания физической активности до управления музыкой и уведомлениями.</p>
     </div>
     <button>Купить</button>
+</div>
 </div>
