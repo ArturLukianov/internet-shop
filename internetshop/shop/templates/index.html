@@ -1,84 +1,5 @@
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
-    * {
-        font-family: Inter;
-    }
-
-    h1 {
-        color: white;
-        padding: 0;
-        margin: 0;
-    }
-
-    img {
-        max-width: 300px;
-        max-height: 300px;
-    }
-
-    .product {
-        display: flex;
-        margin-top: 20px;
-        border-radius: 10px;
-        padding: 10px;
-        background-color: white;
-        width: 60%;
-    }
-
-    .heading {
-        display: flex;
-        align-items: center;
-        padding-bottom: 10px;
-        justify-content: center;
-    }
-
-    a {
-        margin-right: 50px;
-        text-decoration: none;
-        color: black;
-        font-size: 22px;
-    }
-
-    a:hover {
-        color: #04aa6d;
-    }
-
-    h2 {
-        color: #04aa6d;
-    }
-
-    .logo {
-        background-color: #04aa6d;
-        padding: 10px;
-        border-radius: 10px;
-    }
-
-    .navigation {
-        margin-left: 100px;
-    }
-
-    .productList {
-        background-color: #f6f6f6;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    button {
-        height: 50px;
-        width: 100%;
-        background-color: white;
-        border: 2px solid #d6d6d6;
-        color: #060606;
-        padding: 0;
-        border-radius: 10px;
-    }
-
-    .priceSection {
-        width: 500px;
-    }
-
-</style>
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}"/>
 
 <div class="heading">
     <div class="logo">
@@ -96,7 +17,7 @@
 <div class="productList">
 
 <div class="product">
-    <img src="https://eco-speed.ru/d/ninebot_one_s2-glavnay.jpg">
+    <img src="{% static 'monowheel.webp' %}">
     <div>
         <h2>Моноколесо</h2>
         <p>Моноколесо – это инновационное средство передвижения, которое сочетает в себе стиль, удобство и функциональность.
@@ -118,6 +39,9 @@
 
 Они помогут вам следить за здоровьем, быть в курсе всех событий и оставаться на связи с окружающим миром. Смарт-часы оснащены множеством функций: от отслеживания физической активности до управления музыкой и уведомлениями.</p>
     </div>
-    <button>Купить</button>
+    <div class="priceSection">
+        <h3>19 990 ₽</h3>
+        <button>Купить</button>
+    </div>
 </div>
 </div>

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    font-family: Inter;
+}
+
+h1 {
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.product {
+    display: flex;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    width: 60%;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    justify-content: center;
+}
+
+a {
+    margin-right: 50px;
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+
+a:hover {
+    color: #04aa6d;
+}
+
+h2 {
+    color: #04aa6d;
+}
+
+.logo {
+    background-color: #04aa6d;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.navigation {
+    margin-left: 100px;
+}
+
+.productList {
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    border: 2px solid #d6d6d6;
+    color: #060606;
+    padding: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+button:hover {
+    color: white;
+    background-color: #04aa6d;
+    border: none;
+}
+
+.priceSection {
+    width: 500px;
+    text-align: center;
+    margin-left: 20px;
+}
