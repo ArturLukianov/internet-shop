@@ -7,14 +7,14 @@
     </div>
 
     <div class="navigation">
-        <a href="/">Главная</a>
-        <a href="/products">Товары</a>
-        <a href="/discounts">Акции</a>
+        <a class="navlink" href="/">Главная</a>
+        <a class="navlink" href="/products">Товары</a>
+        <a class="navlink" href="/discounts">Акции</a>
     </div>
 </div>
 
 <div class="productCard">
-    <img src="{{ product.image_url }}">
+    <img src="{{ product.image_url }}" class="productImage">
     <div class="productInfo">
         <h1>{{ product.name }}</h1>
         <h3>{{ product.price }} ₽</h3>
