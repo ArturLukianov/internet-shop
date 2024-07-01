@@ -12,6 +12,7 @@ def home(request):
 
 def view_product(request, id):
     product = Product.objects.filter(id=id).first()
+
     return render(request, 'product.html', {
         'product': product
     })

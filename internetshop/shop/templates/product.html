@@ -29,4 +29,27 @@
         {{ product.description }}
     </p>
 
+    <h1>Характеристики:</h1>
+
+    {% if product.weight %}
+    <div class="charRow">
+        <p>
+            Вес:
+        </p>
+        <p>
+            {{ product.weight }} грамм
+        </p>
+    </div>
+    {% endif %}
+
+    {% if product.model %}
+    <div class="charRow">
+        <p>
+            Модель:
+        </p>
+        <p>
+            {{ product.model }}
+        </p>
+    </div>
+    {% endif %}
 </div>
