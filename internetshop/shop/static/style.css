@@ -4,7 +4,7 @@
     font-family: Inter;
 }
 
-h1 {
+.logoText {
     color: white;
     padding: 0;
     margin: 0;
@@ -90,6 +90,16 @@ button:hover {
 
 .productCard {
     width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.productDetails {
+
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
