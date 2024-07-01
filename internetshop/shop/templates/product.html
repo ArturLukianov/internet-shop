@@ -14,10 +14,10 @@
 </div>
 
 <div class="productCard">
-    <img src="/static/monowheel.webp">
+    <img src="{{ product.image_url }}">
     <div class="productInfo">
-        <h1>Название продукта: ID {{id}}</h1>
-        <h3>100 рублей</h3>
+        <h1>{{ product.name }}</h1>
+        <h3>{{ product.price }} ₽</h3>
 
         <button>Купить</button>
     </div>
@@ -26,7 +26,7 @@
 <div class="productDetails">
     <h1>Описание:</h1>
     <p>
-        Lorem Ipsum
+        {{ product.description }}
     </p>
 
 </div>
