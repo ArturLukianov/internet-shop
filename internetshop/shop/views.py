@@ -10,6 +10,8 @@ def home(request):
         'products': products
     })
 
-def view_product(request):
-    return render(request, 'product.html')
+def view_product(request, id):
+    return render(request, 'product.html', {
+        'id': id
+    })
 
