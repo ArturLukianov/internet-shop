@@ -42,7 +42,7 @@
     color: #04aa6d;
 }
 
-h2 {
+.textGreen {
     color: #04aa6d;
 }
 
@@ -122,4 +122,14 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.reviewHeader {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.reviewHeader * {
+    margin: 0;
 }
