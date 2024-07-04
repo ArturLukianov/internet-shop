@@ -74,4 +74,23 @@
         </div>
         {% endfor %}
     </div>
+
+    <h1>Создать отзыв:</h1>
+    <div class="createReview">
+        <form class="createReviewForm" method="POST">
+            <label for="author">Автор:</label>
+            <input name="author" class="inputElement" />
+
+            <label for="rating">Оценка:</label>
+            <select name="rating" class="inputElement">
+                <option>Положительная</option>
+                <option>Отрицательная</option>
+            </select>
+
+            <label for="text">Текст отзыва:</label>
+            <textarea name="text" rows="10" class="inputElement"></textarea>
+
+            <button>Отправить отзыв</button>
+        </form>
+    </div>
 </div>
