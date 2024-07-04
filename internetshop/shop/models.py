@@ -25,3 +25,6 @@ class Review(models.Model):
     author = models.CharField(max_length=256)
     rating = models.IntegerField()
     text = models.TextField()
+
+    def __str__(self):
+        return f'{self.author}: {self.text[:100]}'
