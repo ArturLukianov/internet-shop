@@ -153,3 +153,13 @@ a {
     border-radius: 10px;
     border: 2px solid #a6a6a6;
 }
+
+.payment {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vspace {
+    height: 30px;
+}
