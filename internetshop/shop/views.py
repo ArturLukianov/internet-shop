@@ -3,6 +3,7 @@ from django.shortcuts import render
 
 from .models import Product, Review
 
+
 # Create your views here.
 def home(request):
     products = Product.objects.all()
@@ -31,6 +32,16 @@ def view_product(request, id):
 def payment(request, id):
     product = Product.objects.filter(id=id).first()
 
+    if request.method == "POST":
+        name = request.POST.get('fullname')
+        address = request.POST.get('address')
+        phone = request.POST.get('phone')
+        print(name, address, phone)
+
+
     return render(request, 'payment.html', {
         'product': product
     })
+
+def payment_success(request):
+    return render(request, 'success.html')
