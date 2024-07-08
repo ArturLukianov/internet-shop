@@ -155,11 +155,21 @@ a {
 }
 
 .payment {
-    width: 50%;
+    width: 30%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .vspace {
-    height: 30px;
+    height: 20px;
+}
+
+.paymentDetailsForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.paymentDetailsForm label {
+    margin-top: 10px;
+    margin-bottom: 5px;
 }

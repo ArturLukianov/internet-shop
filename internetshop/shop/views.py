@@ -28,5 +28,9 @@ def view_product(request, id):
     })
 
 
-def payment(request):
-    return render(request, 'payment.html')
+def payment(request, id):
+    product = Product.objects.filter(id=id).first()
+
+    return render(request, 'payment.html', {
+        'product': product
+    })

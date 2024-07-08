@@ -9,8 +9,8 @@
 </div>
 
 <div class="payment">
-    <h1>Товар: Аврора Фон 2077</h1>
-    <h2>К оплате: 100 руб.</h2>
+    <h1>Товар: {{product.name}}</h1>
+    <h2>К оплате: {{product.price}} ₽</h2>
 
     <div class="vspace"></div>
 
@@ -21,16 +21,20 @@
     <div class="vspace"></div>
 
     <h2>Данные для доставки</h2>
-    <label>Ваше ФИО:</label>
-    <input class="inputElement">
+    <form class="paymentDetailsForm" method="POST">
+        {% csrf_token %}
 
-    <label>Адрес доставки:</label>
-    <input class="inputElement">
+        <label>Ваше ФИО:</label>
+        <input class="inputElement" name="fullname">
 
-    <label>Номер телефона для связи:</label>
-    <input class="inputElement">
+        <label>Адрес доставки:</label>
+        <input class="inputElement" name="address">
 
-    <div class="vspace"></div>
+        <label>Номер телефона для связи:</label>
+        <input class="inputElement" name="phone">
 
-    <button>Оплатил</button>
+        <div class="vspace"></div>
+
+        <button>Оплатил</button>
+    </form>
 </div>
