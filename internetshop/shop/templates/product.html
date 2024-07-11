@@ -19,7 +19,9 @@
         <h1>{{ product.name }}</h1>
         <h3>{{ product.price }} ₽</h3>
 
-        <button>Купить</button>
+        <a href="/payment/{{ product.id }}">
+            <button>Купить</button>
+        </a>
     </div>
 </div>
 
